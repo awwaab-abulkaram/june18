@@ -14,9 +14,6 @@ body:hover {
     cursor: url('../public/cursor-hover.png'), auto;
   }
 
-div{
-    display: grid;
-}
 .main-heading{
     font-family: "Great Vibes", cursive ;
     font-weight: 400;
@@ -25,7 +22,7 @@ div{
     text-align: center;
 }
 .secondary-heading{
-    font-family: "Suranna", serif;
+    font-family: "Catellos", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3.5rem;
@@ -39,4 +36,18 @@ div{
     border: 1px solid #0B0500;
     text-align: center;
     justify-content: center;
+}
+
+@font-face {
+    font-family: 'Catellos';
+    src: url('./Assets/Fonts/Catellos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+font-family: 'Sophia';
+src: url('./Assets/Fonts/Sophia.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
