@@ -4,6 +4,7 @@ import Lens from './Lens';
 import Timeline from './Timeline';
 import Gallery from './Gallery';
 import CustomCursor from './CustomCursor';
+import Game from './Game';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <Lens/>
         <Timeline/>
         <Gallery/>
+        <Game/>
       </div>
     )
 }
