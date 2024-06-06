@@ -5,18 +5,23 @@ import Timeline from './Timeline';
 import Gallery from './Gallery';
 import CustomCursor from './CustomCursor';
 import Game from './Game';
+import Hero from './Hero';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 
 const Home = () => {
   return (
     <div>
-        <h2 className='main-heading'>Happiest Birthday, Beautiful!</h2>
+        <Navbar/>
+        <Hero/>
         <CustomCursor/>
         <Music/>
         <Lens/>
         <Timeline/>
         <Gallery/>
         <Game/>
+        <Footer/>
       </div>
     )
 }
