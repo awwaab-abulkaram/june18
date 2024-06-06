@@ -1,33 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-body{
+  }
+  
+  body {
     background-color: #FFFFF0;
     color: #0B0500;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem !important;
     height: 100vh;
-}
-
-body:hover {
+  }
+  
+  body:hover {
     cursor: url('../public/cursor-hover.png'), auto;
   }
-
-.main-heading{
-    font-family: "Great Vibes", cursive ;
+  
+  .main-heading {
+    font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 7rem;
     text-align: center;
-}
-.secondary-heading{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .secondary-heading {
     font-family: "Catellos", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3.5rem;
-}
-.container-box{
+  }
+  
+  .container-box {
     background-color: #ECC5C0;
     padding: 2rem;
     margin: 1rem;
@@ -36,18 +40,19 @@ body:hover {
     border: 1px solid #0B0500;
     text-align: center;
     justify-content: center;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Catellos';
     src: url('./Assets/Fonts/Catellos.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-
-@font-face {
-font-family: 'Sophia';
-src: url('./Assets/Fonts/Sophia.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
+  
+  @font-face {
+    font-family: 'Sophia';
+    src: url('./Assets/Fonts/Sophia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
