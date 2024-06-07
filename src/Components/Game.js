@@ -4,7 +4,7 @@ const Game = () => {
   return (
     <div> 
     <div className='sections'>
-        <div className='secondary-heading'>My Player 2...</div>
+        <div className='secondary-heading'>My Player Two</div>
     </div>
 </div>
   )

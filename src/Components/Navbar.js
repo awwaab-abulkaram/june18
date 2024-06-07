@@ -1,9 +1,10 @@
 import React from 'react'
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Navbar = () => {
   return (
     <div className='navbar-section'>
-      <div className='text-navbar'>Made for Amruta, with love.</div>
+      <div className='text-navbar'><FavoriteIcon/> Made for Amruta, with love <FavoriteIcon/>.</div>
     </div>
   )
 }

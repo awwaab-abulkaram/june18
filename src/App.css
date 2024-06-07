@@ -26,20 +26,18 @@ body {
   font-style: normal;
   font-size: 7rem;
   text-align: left;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .secondary-heading {
-  font-family: "Cookie", cursive;
+  font-family: "Aston", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 4.5rem;
 }
 
 .text-content {
-  font-family: "Cookie", cursive;
+  font-family: "Aston", cursive;
   font-weight: 400;
-  font-style: italic;
   font-size: 2.5rem;
   text-align: left;
 }
@@ -47,13 +45,12 @@ body {
 .text-navbar {
   font-family: "Cookie", cursive;
   font-weight: 400;
-  font-style: italic;
   font-size: 2.5rem;
   text-align: left;
 }
 
 .navbar-section {
-  background-color: #C4F1BE;
+  background-color: #D8BFD8;
   min-height: 5rem;
   display: flex;
   padding: 1rem;
@@ -77,12 +74,13 @@ body {
   text-decoration: none;
 }
 .footer {
-  background-color: #C4F1BE;
+  background-color: #D8BFD8;
   padding: 2rem;  
   text-align: center;
   align-content: center;
   justify-content: center;
 }
+
 
 @font-face {
   font-family: 'Catellos';
@@ -94,6 +92,13 @@ body {
 @font-face {
   font-family: 'Sophia';
   src: url('./Assets/Fonts/Sophia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston';
+  src: url('./Assets/Fonts/Aston\ Script.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

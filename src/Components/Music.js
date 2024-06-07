@@ -6,7 +6,6 @@ const Music = () => {
     <div>
         <div className='sections'>
             <div className='secondary-heading'>You're music to my ears!</div>
-            <Link to={'/timeline'} className='link-in-buttons'>click</Link>
         </div>
     </div>
   )
