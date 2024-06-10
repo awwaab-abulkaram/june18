@@ -26,6 +26,7 @@ body {
   font-style: normal;
   font-size: 7rem;
   text-align: left;
+  color: #FFFFF0;
 }
 
 .secondary-heading {
@@ -33,17 +34,19 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 4.5rem;
+  color: #FFFFF0;
 }
 
 .text-content {
-  font-family: "Aston", cursive;
+  font-family: "Cookie", cursive;
   font-weight: 400;
   font-size: 2.5rem;
   text-align: left;
+  color: #FFFFF0;
 }
 
 .text-navbar {
-  font-family: "Cookie", cursive;
+  font-family: "Glysa", cursive;
   font-weight: 400;
   font-size: 2.5rem;
   text-align: left;
@@ -61,13 +64,56 @@ body {
 }
 
 .sections {
-  background-color: #ECC5C0;
+  background-color: #191970;
   padding: 2rem;
   margin: 5rem;
-  min-height: 50vh;
   text-align: center;
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
   align-content: center;
   justify-content: center;
+}
+.play-button{
+  background-color: #770737;
+  border: none;
+  font-family: "Cookie", cursive;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-button:hover {
+  background-color: #9e2157;
+  transform: scale(1.05);
+}
+
+.play-button:active {
+  transform: scale(0.95);
+  background-color: #ff4500;
+}
+
+.play-button{
+  background-color: #770737;
+  border: none;
+  font-family: "Cookie", cursive;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 .link-in-buttons {
   cursor: pointer;
@@ -99,6 +145,13 @@ body {
 @font-face {
   font-family: 'Aston';
   src: url('./Assets/Fonts/Aston\ Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glysa';
+  src: url('./Assets/Fonts/Glysa.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

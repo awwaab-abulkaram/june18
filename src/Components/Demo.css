@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #FFFFF0;
+    color: #0B0500;
+    margin: auto;
+    padding: 2rem;
+    height: 100vh;
+  }
+  
+  .main-heading {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .secondary-heading {
+    font-family: "Catellos", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .container-box {
+    background-color: #ECC5C0;
+    padding: 2rem;
+    margin: 1rem;
+    min-height: 50vh;
+    border-radius: 1.5rem;
+    border: 1px solid #0B0500;
+    text-align: center;
+    justify-content: center;
+  }
+  

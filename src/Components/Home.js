@@ -13,17 +13,23 @@ import Popup from './Popup';
 
 
 const Home = () => {
-
+  const [showPopup, setShowPopup] = useState(true)
   const [timedPopup, setTimedPopup] = useState(false)
-  useEffect(()=>{
-    setTimeout(()=>{
-      setTimedPopup(true)
-    },2000)
-  },[])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimedPopup(true);
+    }, 1000);
+
+    // Cleanup the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  const togglePopup = () => {
+    setTimedPopup(false);  };
   return (
     <div>
         <Navbar/>
-        <Popup trigger ={false}/>
+        <Popup trigger={timedPopup} onClose={togglePopup}/>
         <Hero/>
         <CustomCursor/>
         <Music/>
