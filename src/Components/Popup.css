@@ -20,6 +20,7 @@
     width: 100%;
     max-width: 640px;
     background-color: #FFF5EE;
+    background-image: url('../Assets/popup-bg.jpg');
     z-index: 1001; /* Higher than the overlay to ensure it's clickable */
 }
 
@@ -31,7 +32,7 @@
   }
 
 .popup-button{
-    background-color: #b32663;
+    background-color: #560e13;
     border: none;
     font-family: "Cookie", cursive;
     color: white;

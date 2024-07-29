@@ -1,14 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 ;
   /* cursor: url('../public/cursor-idle.png'), auto !important; */
 }
 
 body {
-  background-color: #FFFFF0;
+  display: grid;
+  background-color: #FFF5E1;
   color: #0B0500;
-  margin: auto;
+  /* margin: auto; */
   /* padding: 2rem !important; */
+  overflow: hidden;
   height: 100vh;
   cursor: url('../public/cursor-idle.png'), auto !important;
 }
@@ -21,20 +23,23 @@ body {
 }
 
 .main-heading {
+  
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: left;
-  color: #FFFFF0;
+  color: #000000;
 }
 
 .secondary-heading {
+ 
   font-family: "Aston", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 4.5rem;
-  color: #FFFFF0;
+  color: #000000;
+  line-height: 6rem;
 }
 
 .text-content {
@@ -42,7 +47,7 @@ body {
   font-weight: 400;
   font-size: 2.5rem;
   text-align: left;
-  color: #FFFFF0;
+  color: #000000;
 }
 
 .text-navbar {
@@ -64,15 +69,16 @@ body {
 }
 
 .sections {
-  background-color: #191970;
   padding: 2rem;
   margin: 5rem;
   text-align: center;
-  display: grid;
+  display: inline-block;
   place-items: center;
-  min-height: 80vh;
   align-content: center;
   justify-content: center;
+}
+.sections img {
+  width: 100%;
 }
 .play-button{
   background-color: #770737;
@@ -85,7 +91,7 @@ body {
   display: inline-block;
   font-size: 28px;
   margin-top: 2rem;
-  cursor: pointer;
+  /* cursor: url('../public/hover.png') auto !important; */
   border-radius: 12px;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -155,3 +161,11 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Modista';
+  src: url('./Assets/Fonts/modista.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

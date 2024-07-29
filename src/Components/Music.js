@@ -1,21 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion';
+import React,{useState} from 'react'
+import kisses from '../Assets/kisses.jpg'
+import amruta from '../Assets/amruta1.png'
+import amruta1 from '../Assets/amruta2.png'
+import spotify from '../Assets/music/spotify.jpg'
+import q from '../Assets/music/quote.jpg'
 
 const Music = () => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
   return (
-    <div>
-        <div className='sections'>
-        <motion.div 
-            className='secondary-heading'
-            initial={{ opacity: 0, x: -75 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
-            >
-              You are the music to my ears!
-            </motion.div>
+    <div className="grid-container">
+          <div className="grid-item">Element 1</div>
+          <div className="grid-item"><img src={q}></img></div>
+          <div className="grid-item">Element 3</div>
+          <div className="grid-item"><img src={amruta}></img></div>
+          <div className="grid-item"><img src={kisses}></img></div>
+          <div className="grid-item">Element 6</div>
+          <div className="grid-item">Element 7</div>
+          <div className="grid-item">Element 8</div>
+          <div className="grid-item"><img src={spotify}></img></div>
+          <div className="center-component">
+          <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+            <div className="card-side card-front">
+          </div>
+            <div className="card-side card-back">
+          </div>
+          </div>
+          </div>
+          <div className="grid-item">Element 10</div>
+          <div className="grid-item"></div>
+          <div className="grid-item"><img src={amruta1}></img></div>
         </div>
-    </div>
   )
 }
 

@@ -1,20 +1,21 @@
-import React from 'react'
-import { useEffect, useState } from 'react';
-import Music from './Music';
-import Lens from './Lens';
-import Timeline from './Timeline';
-import Gallery from './Gallery';
-import CustomCursor from './CustomCursor';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Game from './Game';
 import Hero from './Hero';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import Popup from './Popup';
+import './Demo.css';
+import Popup from './Popup'
+import Music from './Music'
+import Music0 from './Music0'
+import kisses from '../Assets/kisses.jpg'
+import amruta from '../Assets/amruta1.png'
+import amruta1 from '../Assets/amruta2.png'
+import Lens from './Lens';
+import Card from './Card';
+import Hero2 from './Hero2';
 
+function App() {
+  const [timedPopup, setTimedPopup] = useState(false);
 
-const Home = () => {
-  const [showPopup, setShowPopup] = useState(true)
-  const [timedPopup, setTimedPopup] = useState(false)
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimedPopup(true);
@@ -25,21 +26,68 @@ const Home = () => {
   }, []);
 
   const togglePopup = () => {
-    setTimedPopup(false);  };
+    setTimedPopup(false);
+  };
+
+  const [pageIndex, setPageIndex] = useState(0);
+
+  const nextPage = () => {
+    if (pageIndex < 5) {
+      setPageIndex((prevIndex) => prevIndex + 2);
+    }
+  };
+  
+  const prevPage = () => {
+    if (pageIndex > 0) {
+      setPageIndex((prevIndex) => prevIndex - 2);
+    }
+  };
+
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const flipCard = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <div>
-        <Navbar/>
-        <Popup trigger={timedPopup} onClose={togglePopup}/>
-        <Hero/>
-        <CustomCursor/>
+      <Popup trigger={timedPopup} onClose={togglePopup} />
+      <div className="container" style={{ transform: `translateX(-${pageIndex * 50}vw)` }}>
+        <div className="page">
+          <Hero/>
+        </div>
+        <div className="page">
+          <Hero2/>
+        </div>
+        <div className="page">
+        <Music0 />
+        </div>
+        <div className="page">
         <Music/>
-        <Lens/>
-        <Timeline/>
-        <Gallery/>
+        </div>
+        <div className="page">
+          <Lens/>
+        </div>
+        <div className="page">
+        
+        </div>
+        <div className="page">
         <Game/>
-        <Footer/>
+        </div>
+        <div className="page">
+      {pageIndex}
+        </div>
       </div>
-    )
+      <div className="button-container">
+        <button  className="prev-button" onClick={prevPage} disabled={pageIndex === 0}>
+          Previous Page
+        </button>
+        <button className="next-button" onClick={nextPage} disabled={pageIndex === 6}>
+          Next Page
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default App;

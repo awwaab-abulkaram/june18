@@ -17,7 +17,7 @@ function Popup(props) {
         <br/>
         <p className='popup-text'>Love,</p>
         <p className='popup-text'>Awwaab.</p>
-        <button className='popup-button' onClick={props.onClose}>Awww...</button>
+        <button className='popup-button' onClick={props.onClose}>Awww...continue browsing</button>
         {props.children}
       </div>
     </div>
